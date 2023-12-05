@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Finance Tracker</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <style>
+        .main_a, .main_text, .main_dropdown, .main_date, .main_location, .main_buttons, .main_table, .main_tables, .tab_text {
+            margin-top: 8px;
+            margin-left: 50px;
+        }
+
+        .main_text input, .main_location input {
+            width: 95%;
+        }
+
+        .main_date input {
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand">Expense Tracker Application</a>
+        <form class="form-inline">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Expense</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Login</a>
+                </li>
+            </ul>
+        </form>
+    </nav>
+
+    <div class="main_a">
+        <h4>Add Expense</h4>
+    </div>
+
+    <div class="main_text">
+        <h6>Title</h6>
+        <input type="text" id="content" name="content">
+    </div>
+
+    <div class="main_dropdown">
+        <label>Category:</label>
+        <select name="dropdown" id="category">
+            <option value="a">A</option>
+            <option value="b">B</option>
+            <option value="c">C</option>
+            <option value="d">D</option>
+        </select>
+    </div>
+
+    <div class="main_date">
+        <label>Date:</label>
+        <input type="text" id="">
+    </div>
+
+    <div class="main_location">
+        <h6>Location</h6>
+        <input type="text" id="">
+    </div>
+
+    <div class="main_buttons">
+        <button class="btn btn-primary" type="submit">Button</button>
+        <button class="btn btn-primary" type="submit">Button</button>
+    </div>
+
+    <div class="tab_text">
+        <h4>Expense List</h4>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Description</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A</td>
+                    <td>A</td>
+                    <td>A</td>
+                    <td>A</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>B</td>
+                    <td>B</td>
+                    <td>B</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>C</td>
+                    <td>C</td>
+                    <td>C</td>
+                    <td>C</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
